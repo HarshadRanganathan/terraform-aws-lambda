@@ -7,7 +7,7 @@ variable "region" {
 variable "namespace" {
   type        = string
   description = "Namespace (e.g. `eg` or `cp`)"
-  default     = "pes"
+  default     = "aws"
 }
 
 variable "stage" {

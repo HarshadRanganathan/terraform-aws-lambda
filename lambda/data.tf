@@ -8,7 +8,7 @@ data "terraform_remote_state" "lambda_role" {
 
   config = {
     region         = "us-east-1"
-    bucket         = "pes-${var.stage}-terraform-state"
+    bucket         = "aws-${var.stage}-terraform-state"
     key            = "${var.stage}/iam/roles/lambda/terraform.tfstate"
   }
 }

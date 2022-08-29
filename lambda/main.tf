@@ -19,4 +19,5 @@ module "lambda" {
   tags           = local.tags
   timeout        = var.timeout
   tracing_mode   = var.tracing_mode
+  memory_size    = var.memory_size
 }
